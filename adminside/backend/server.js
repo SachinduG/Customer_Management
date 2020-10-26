@@ -11,7 +11,7 @@ let User = require('./user.model');
 app.use(cors());
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb+srv://Gamitha:IT19140476@fashow.ygx0b.mongodb.net/Fashow?retryWrites=true&w=majority', { useNewUrlParser: true });
+mongoose.connect('/*mongo url*/', { useNewUrlParser: true });
 const connection = mongoose.connection;
 
 connection.once('open', function() {
